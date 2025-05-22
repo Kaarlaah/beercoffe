@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Arte del Latte: De Principiante a Experto | Beercoffé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose {
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+        .prose h2, .prose h3, .prose h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .prose img {
+            border-radius: 0.5rem;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose ul, .prose ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Back button -->
+            <a href="./blogs.html" class="inline-flex items-center text-terracota hover:underline mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al blog
+            </a>
+
+            <!-- Post header -->
+            <div class="mb-12">
+                <span class="text-terracota font-semibold">TÉCNICA</span>
+                <h1 class="font-playfair text-3xl md:text-4xl mt-2 mb-4">El Arte del Latte: De Principiante a Experto</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-6">
+                    <span>12 Junio, 2023</span>
+                    <span class="mx-2">•</span>
+                    <span>8 min lectura</span>
+                    <span class="mx-2">•</span>
+                    <span>Por <a href="#" class="text-terracota hover:underline">Carlos Méndez</a></span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Featured image -->
+            <img src="./images/tecnica-late.webp" alt="Barista creando complejo diseño de corazón en taza de latte" class="w-full rounded-xl shadow-lg mb-12">
+
+            <!-- Post content -->
+            <div class="prose mx-auto">
+                <p class="lead">El arte latte transforma una simple taza de café con leche en una obra maestra comestible. Desde los corazones básicos hasta los cisnes y rosas más elaborados, esta técnica ha evolucionado hasta convertirse en una forma de expresión artística en la industria del café.</p>
+
+                <h2>Los Fundamentos del Arte Latte</h2>
+                <p>Antes de intentar diseños complejos, es esencial dominar los elementos básicos:</p>
+
+                <img src="./images/progresion-late.jpg" alt="Progresión de diseños de latte art desde básico hasta avanzado">
+
+                <h3>1. La Calidad de la Espuma</h3>
+                <p>La textura de la leche es el lienzo de tu arte. Debe ser:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Sedosa</strong>: Sin burbujas grandes visibles</li>
+                    <li><strong>Brillante</strong>: Con un aspecto satinado</li>
+                    <li><strong>Consistente</strong>: Como "pintura blanca líquida"</li>
+                </ul>
+
+                <h3>2. El Vertido Controlado</h3>
+                <p>La técnica del vertido tiene tres fases críticas:</p>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li><strong>Mezcla inicial</strong>: Vertido alto para integrar la leche y el espresso</li>
+                    <li><strong>Diseño</strong>: Acercar la jarra y controlar el flujo</li>
+                    <li><strong>Cierre</strong>: El movimiento final que define el diseño</li>
+                </ol>
+
+                <img src="./images/barista-tecnica.avif" alt="Barista demostrando la técnica correcta de vertido para latte art">
+
+                <h2>Diseños Básicos para Principiantes</h2>
+
+                <h3>El Corazón</h3>
+                <p>El diseño más fundamental y base para otros más complejos:</p>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li>Comienza el vertido en el centro de la taza</li>
+                    <li>Cuando la taza esté 3/4 llena, acerca la jarra a la superficie</li>
+                    <li>Vierte con un movimiento constante para crear un círculo</li>
+                    <li>Al final, levanta la jarra y corta el diseño con un hilo de leche</li>
+                </ol>
+
+                <h3>La Hoja</h3>
+                <p>Una evolución natural del corazón:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Sigue los mismos pasos iniciales que para el corazón</li>
+                    <li>Cuando hagas el corte final, mueve la jarra de lado a lado mientras avanzas</li>
+                    <li>Termina con el característico "tallo" de la hoja</li>
+                </ul>
+
+                <img src="./images/diseños-latte.jpg" alt="Comparación entre diseños básicos de corazón y hoja en latte art">
+
+                <h2>Técnicas Avanzadas</h2>
+                <p>Una vez dominados los básicos, puedes explorar técnicas más complejas:</p>
+
+                <h3>Multi-capas</h3>
+                <p>Creación de diseños con múltiples elementos superpuestos:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Comienza con un corazón o hoja base</li>
+                    <li>Agrega elementos más pequeños encima</li>
+                    <li>Usa herramientas como palillos para detalles finos</li>
+                </ul>
+
+                <h3>Arte con Plantillas</h3>
+                <p>Para diseños extremadamente detallados:</p>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li>Espolvorea cacao o canela sobre la espuma</li>
+                    <li>Coloca una plantilla con el diseño deseado</li>
+                    <li>Espolvorea más cacao a través de la plantilla</li>
+                    <li>Retira cuidadosamente la plantilla</li>
+                </ol>
+
+                <img src="./images/latte-avanzado.jpeg" alt="Ejemplos de latte art avanzado con múltiples elementos y detalles">
+
+                <h2>Consejos de Nuestros Baristas</h2>
+                <div class="bg-milk p-6 rounded-lg my-8">
+                    <p>"La práctica constante es clave. Incluso los baristas más experimentados practican diariamente sus técnicas básicas. Recomiendo comenzar con agua teñida de café en lugar de leche para economizar en las prácticas iniciales."</p>
+                    <p class="mt-4 text-right font-semibold">- Ana López, Campeona Nacional de Arte Latte 2022</p>
+                </div>
+
+                <h2>Errores Comunes y Cómo Evitarlos</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse my-6">
+                        <thead>
+                            <tr class="bg-terracota text-white">
+                                <th class="p-3 text-left">Error</th>
+                                <th class="p-3 text-left">Solución</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Espuma demasiado gruesa</td>
+                                <td class="p-3">Incorporar menos aire al vaporizar la leche</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Diseños que se hunden</td>
+                                <td class="p-3">Verter más cerca de la superficie al crear el diseño</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Leche demasiado caliente</td>
+                                <td class="p-3">No superar los 65°C para mantener la textura ideal</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Diseños asimétricos</td>
+                                <td class="p-3">Practicar la posición de la mano y el ángulo de la jarra</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Galería de Nuestros Mejores Diseños</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
+                    <img src="./images/latte-corazon.jpg" alt="Latte art de corazón perfecto" class="rounded-lg h-[100%] object-cover">
+                    <img src="./images/latte-hoja.webp" alt="Latte art de hoja simétrica" class="rounded-lg h-[100%] object-cover">
+                    <img src="./images/latte-cisne.jpg" alt="Latte art de cisne avanzado" class="rounded-lg h-[100%] object-cover">
+                    <img src="./images/latte-rosa.jpg" alt="Latte art de rosa detallada" class="rounded-lg h-[100%] object-cover">
+                    <img src="./images/latte-tulipan.jpg" alt="Latte art de tulipán multicapa" class="rounded-lg h-[100%] object-cover">
+                    <img src="./images/latte-moderno.jpg" alt="Latte art de diseño abstracto moderno" class="rounded-lg h-[100%] object-cover">
+                </div>
+
+                <h2>Próximos Talleres de Arte Latte</h2>
+                <p>¿Quieres aprender en persona? Únete a nuestros talleres:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Básico</strong>: Todos los sábados - 10:00 a 12:00</li>
+                    <li><strong>Intermedio</strong>: Primer domingo de cada mes - 16:00 a 18:00</li>
+                    <li><strong>Avanzado</strong>: Consultar fechas especiales</li>
+                </ul>
+                <p class="mt-4"><a href="./index.html#contacto" class="text-terracota font-semibold hover:underline">Contáctanos</a> para más información e inscripciones.</p>
+            </div>
+
+            <!-- Author bio -->
+            <div class="bg-milk p-6 rounded-lg mt-12 flex flex-col md:flex-row items-center">
+                <img src="./images/profile1.jpg" alt="Retrato de Carlos Méndez, barista jefe de Beercoffé" class="w-24 h-24 object-cover rounded-full mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h3 class="font-playfair text-xl mb-2">Sobre el Autor</h3>
+                    <p><strong>Carlos Méndez</strong> es nuestro barista jefe con más de 10 años de experiencia en la industria del café especial. Campeón regional de arte latte en 2020, se especializa en técnicas de extracción y preparación visual. Actualmente dirige nuestro programa de formación para nuevos baristas.</p>
+                </div>
+            </div>
+
+            <!-- Comments section -->
+            <div class="mt-12 pt-8 border-t border-olive">
+                <h3 class="font-playfair text-2xl mb-6">Comentarios (3)</h3>
+                <div class="space-y-6 mb-8">
+                    <!-- Comment 1 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">María G.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 14 Junio, 2023</span>
+                        </div>
+                        <p>¡Excelente artículo! Justo lo que necesitaba para mejorar mis diseños. ¿Recomiendan algún tipo de leche en particular para principiantes?</p>
+                    </div>
+                    
+                    <!-- Comment 2 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Javier R.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 13 Junio, 2023</span>
+                        </div>
+                        <p>Llevo un mes practicando y por fin me salió mi primer corazón decente. Gracias por los consejos sobre la temperatura de la leche, fue un cambio radical.</p>
+                    </div>
+                    
+                    <!-- Comment 3 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Ana S.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 12 Junio, 2023</span>
+                        </div>
+                        <p>¿Cuándo tendrán un taller avanzado? Estoy lista para aprender esas técnicas multicapa que muestran en las fotos.</p>
+                    </div>
+                </div>
+
+                <!-- Comment form -->
+                <h4 class="font-playfair text-xl mb-4">Deja tu comentario</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment" class="block mb-1">Comentario *</label>
+                        <textarea id="comment" rows="4" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Publicar comentario</button>
+                </form>
+            </div>
+
+            <!-- Related posts -->
+            <div class="mt-16">
+                <h3 class="font-playfair text-2xl mb-6">Artículos Relacionados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="./blog-guia-molido.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/molinos-cafe.jpg" alt="Diferentes tipos de molido de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">PREPARACIÓN</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Guía Definitiva del Molido Perfecto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-equipo-casa.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/equipo-cafeteria.webp" alt="Equipo básico de café para casa" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">EQUIPOS</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Equipo Esencial para el Café en Casa</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-catacion-profesional.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/catacion-cafe.webp" alt="Personas realizando catación profesional" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">CULTURA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Introducción a la Catación Profesional</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="./index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

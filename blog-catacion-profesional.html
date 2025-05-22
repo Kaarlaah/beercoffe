@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a la Catación Profesional | Beercoffé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose {
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+        .prose h2, .prose h3, .prose h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .prose img {
+            border-radius: 0.5rem;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose ul, .prose ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <article class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <a href="./blogs.html" class="inline-flex items-center text-terracota hover:underline mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al blog
+            </a>
+
+            <div class="mb-12">
+                <span class="text-terracota font-semibold">CULTURA</span>
+                <h1 class="font-playfair text-3xl md:text-4xl mt-2 mb-4">Introducción a la Catación Profesional</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-6">
+                    <span>28 Mayo, 2023</span>
+                    <span class="mx-2">•</span>
+                    <span>10 min lectura</span>
+                    <span class="mx-2">•</span>
+                    <span>Por <a href="#" class="text-terracota hover:underline">Ana G. Pérez</a></span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <img src="./images/catacion-cafe.webp" alt="Personas realizando catación profesional de café" class="w-full rounded-xl shadow-lg mb-12">
+
+            <div class="prose mx-auto">
+                <p class="lead">La catación de café, también conocida como "cupping", es un método estandarizado para evaluar y describir las características sensoriales de diferentes cafés. Es una herramienta esencial para productores, tostadores y baristas para entender la calidad y los perfiles de sabor de los granos.</p>
+
+                <h2>¿Qué es la Catación y Por Qué es Importante?</h2>
+                <p>La catación permite una evaluación sistemática de las cualidades del café, incluyendo fragancia, aroma, acidez, cuerpo, dulzura, equilibrio y el post-gusto. Es fundamental para:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Identificar defectos en el café.</li>
+                    <li>Evaluar el potencial de diferentes lotes de café.</li>
+                    <li>Crear perfiles de tostado adecuados.</li>
+                    <li>Entender las diferencias entre orígenes y procesos.</li>
+                </ul>
+
+                <img src="./images/rueda-sabores.jpg" alt="Rueda de sabores del café para catación" class="w-full">
+
+                <h3>El Proceso de Catación</h3>
+                <p>El proceso de catación sigue una serie de pasos cuidadosamente controlados para asegurar la consistencia y la comparabilidad:</p>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li><strong>Molienda</strong>: Se muelen granos de café de diferentes muestras en tazas separadas.</li>
+                    <li><strong>Evaluación de Fragancia</strong>: Se huele el café molido en seco para percibir sus aromas iniciales.</li>
+                    <li><strong>Adición de Agua Caliente</strong>: Se vierte agua caliente (93°C) sobre el café molido, creando una "costra".</li>
+                    <li><strong>Romper la Costra y Evaluar Aroma</strong>: Después de unos minutos, se rompe la costra con una cuchara, y se inhala profundamente para evaluar el aroma húmedo.</li>
+                    <li><strong>Remoción de la Espuma</strong>: Se retira la espuma y los residuos de la superficie.</li>
+                    <li><strong>Catación (Degustación)</strong>: Se sorbe el café ruidosamente para aerarlo y permitir que los sabores se dispersen por toda la boca, evaluando los atributos principales.</li>
+                    <li><strong>Evaluación del Post-gusto</strong>: Se observa el sabor residual después de tragar.</li>
+                </ol>
+
+                <img src="./images/pasos-catacion.png" alt="Ilustración de los pasos clave en un proceso de catación de café">
+
+                <h2>Atributos Clave a Evaluar</h2>
+                <p>Los catadores profesionales se enfocan en varios atributos para calificar un café:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Fragancia/Aroma</strong>: Las percepciones olfativas.</li>
+                    <li><strong>Sabor</strong>: La combinación de sabor y aroma en la boca.</li>
+                    <li><strong>Acidez</strong>: La sensación brillante y nítida en la boca (no acidez agria).</li>
+                    <li><strong>Cuerpo</strong>: La sensación táctil del café en la boca (ligero, medio, pesado).</li>
+                    <li><strong>Dulzor</strong>: La presencia de azúcares naturales.</li>
+                    <li><strong>Equilibrio</strong>: La armonía de todos los atributos.</li>
+                    <li><strong>Uniformidad</strong>: Consistencia de sabor en todas las tazas de la misma muestra.</li>
+                    <li><strong>Taza Limpia</strong>: Ausencia de sabores o sensaciones negativas.</li>
+                </ul>
+
+                <h2>Consejos para Iniciarse en la Catación</h2>
+                <div class="bg-milk p-6 rounded-lg my-8">
+                    <p>"La catación es un viaje de descubrimiento sensorial. Empieza por comparar cafés de diferentes orígenes para notar las diferencias. No te presiones, el paladar se entrena con la práctica constante y la atención a los detalles."</p>
+                    <p class="mt-4 text-right font-semibold">- Javier Soto, Q Grader Certificado</p>
+                </div>
+
+                <h2>Errores Comunes en la Catación</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse my-6">
+                        <thead>
+                            <tr class="bg-terracota text-white">
+                                <th class="p-3 text-left">Error</th>
+                                <th class="p-3 text-left">Consecuencia</th>
+                                <th class="p-3 text-left">Recomendación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Distracciones</td>
+                                <td class="p-3">Juicio sesgado, pérdida de concentración</td>
+                                <td class="p-3">Realizar la catación en un ambiente tranquilo</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">No sorber ruidosamente</td>
+                                <td class="p-3">Menor percepción de aromas volátiles</td>
+                                <td class="p-3">Permitir la aeración para una experiencia completa</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Degustar demasiado rápido</td>
+                                <td class="p-3">No permite la evolución de los sabores</td>
+                                <td class="p-3">Tomar tiempo para cada sorbo y atributo</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">No tomar notas</td>
+                                <td class="p-3">Dificultad para recordar y comparar perfiles</td>
+                                <td class="p-3">Registrar impresiones de forma sistemática</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Próximos Talleres de Catación</h2>
+                <p>¿Interesado en desarrollar tu paladar? Únete a nuestros talleres de catación:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Catación para Principiantes</strong>: Tercer sábado de cada mes - 14:00 a 17:00</li>
+                    <li><strong>Catación Avanzada (Preparación para Q Grader)</strong>: Consultar fechas especiales</li>
+                </ul>
+                <p class="mt-4"><a href="./index.html#contacto" class="text-terracota font-semibold hover:underline">Contáctanos</a> para más información e inscripciones.</p>
+            </div>
+
+            <div class="bg-milk p-6 rounded-lg mt-12 flex flex-col md:flex-row items-center">
+                <img src="./images/profile2.jpg" alt="Retrato de Ana G. Pérez, experta en café" class="w-24 object-cover h-24 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h3 class="font-playfair text-xl mb-2">Sobre el Autor</h3>
+                    <p><strong>Ana G. Pérez</strong> es una reconocida experta en café y formadora con una trayectoria de más de 15 años en la industria. Como Q Grader certificada, lidera nuestro programa de catación y es una apasionada de la educación sobre la cultura del café, compartiendo su conocimiento en eventos y publicaciones.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-olive">
+                <h3 class="font-playfair text-2xl mb-6">Comentarios (1)</h3>
+                <div class="space-y-6 mb-8">
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Roberto F.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 30 Mayo, 2023</span>
+                        </div>
+                        <p>Siempre quise entender más sobre la catación. Este artículo es una excelente introducción. ¡Me apunto al próximo taller!</p>
+                    </div>
+                </div>
+
+                <h4 class="font-playfair text-xl mb-4">Deja tu comentario</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment" class="block mb-1">Comentario *</label>
+                        <textarea id="comment" rows="4" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Publicar comentario</button>
+                </form>
+            </div>
+
+            <div class="mt-16">
+                <h3 class="font-playfair text-2xl mb-6">Artículos Relacionados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="./blog-arte-latte.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/tecnica-late.webp" alt="Barista creando complejo diseño de arte latte en taza de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">TÉCNICA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">El Arte del Latte: De Principiante a Experto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-guia-molido.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/molinos-cafe.jpg" alt="Diferentes tipos de molido de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">PREPARACIÓN</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Guía Definitiva del Molido Perfecto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-equipo-casa.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/equipo-cafeteria.webp" alt="Equipo básico de café para casa" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">EQUIPOS</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Equipo Esencial para el Café en Casa</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="./index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

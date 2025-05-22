@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo Esencial para el Café en Casa | Beercoffé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose {
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+        .prose h2, .prose h3, .prose h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .prose img {
+            border-radius: 0.5rem;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose ul, .prose ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <article class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <a href="./blogs.html" class="inline-flex items-center text-terracota hover:underline mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al blog
+            </a>
+
+            <div class="mb-12">
+                <span class="text-terracota font-semibold">EQUIPOS</span>
+                <h1 class="font-playfair text-3xl md:text-4xl mt-2 mb-4">Equipo Esencial para el Café en Casa</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-6">
+                    <span>20 Mayo, 2023</span>
+                    <span class="mx-2">•</span>
+                    <span>5 min lectura</span>
+                    <span class="mx-2">•</span>
+                    <span>Por <a href="#" class="text-terracota hover:underline">David Gómez</a></span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <img src="./images/equipo-cafeteria.webp" alt="Equipo básico de café para casa en mesa de madera" class="w-full rounded-xl shadow-lg mb-12">
+
+            <div class="prose mx-auto">
+                <p class="lead">Para disfrutar de un café de especialidad en la comodidad de tu hogar, no necesitas una cafetería entera. Con unos pocos elementos clave, puedes elevar drásticamente la calidad de tu taza diaria y experimentar con diferentes métodos de preparación.</p>
+
+                <h2>Los 5 Elementos Imprescindibles</h2>
+                <p>Aquí te presentamos los equipos que todo amante del café debería considerar tener en su cocina:</p>
+
+                <img src="./images/molino-cafe-casa.jpg" alt="Molino de café manual para casa">
+
+                <h3>1. Molino de Muelas de Calidad</h3>
+                <p>Este es, sin duda, el elemento más importante. Un molido uniforme es crucial para una extracción consistente y un sabor óptimo. Los molinos de muelas (burr grinders) son superiores a los de cuchillas, ya que muelen el café en partículas de tamaño consistente. Puedes optar por un molino manual para una opción más económica o uno eléctrico para mayor comodidad.</p>
+
+                <h3>2. Balanza Digital con Temporizador</h3>
+                <p>La precisión es clave en la preparación del café. Una balanza te permite medir con exactitud la cantidad de café y agua, dosificando con la proporción ideal para cada método. El temporizador incorporado te ayudará a controlar el tiempo de extracción, un factor vital para evitar la sobre o sub-extracción.</p>
+
+                <img src="./images/balanza-digital.webp" alt="Balanza digital con temporizador para café">
+
+                <h3>3. Hervidor con Cuello de Cisne (Gooseneck Kettle)</h3>
+                <p>Especialmente para métodos de vertido como V60 o Chemex, un hervidor con cuello de cisne te da un control superior sobre el flujo y la dirección del agua. Esto permite una saturación uniforme del café molido, lo que se traduce en una extracción más equilibrada.</p>
+
+                <h3>4. Tu Método de Preparación Preferido</h3>
+                <p>Aquí es donde entra tu gusto personal. Algunas opciones populares para el hogar incluyen:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Prensa Francesa</strong>: Fácil de usar, produce un café con cuerpo completo.</li>
+                    <li><strong>Aeropress</strong>: Versátil, ideal para viajes, produce un café limpio y concentrado.</li>
+                    <li><strong>Pour Over (V60, Chemex)</strong>: Requiere más técnica, pero permite resaltar las notas de sabor más delicadas.</li>
+                    <li><strong>Moka Pot</strong>: Para un café fuerte y con cuerpo, similar a un espresso casero.</li>
+                </ul>
+
+                <h3>5. Granos de Café de Especialidad Frescos</h3>
+                <p>El mejor equipo del mundo no puede compensar granos de mala calidad o viejos. Invierte en café de especialidad recién tostado y de origen único. Busca la fecha de tueste en el empaque y compra en pequeñas cantidades para asegurar la frescura.</p>
+
+                <h2>Consejos de Nuestros Baristas</h2>
+                <div class="bg-milk p-6 rounded-lg my-8">
+                    <p>"No necesitas gastar una fortuna para hacer un buen café en casa. Empieza con lo básico, domina una técnica y luego ve añadiendo equipos a medida que tu pasión por el café crezca. La clave es la paciencia y la experimentación."</p>
+                    <p class="mt-4 text-right font-semibold">- Sofía Rivas, Especialista en Café Casero</p>
+                </div>
+
+                <h2>Errores Comunes al Comprar Equipo</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse my-6">
+                        <thead>
+                            <tr class="bg-terracota text-white">
+                                <th class="p-3 text-left">Error</th>
+                                <th class="p-3 text-left">Problema Causado</th>
+                                <th class="p-3 text-left">Recomendación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Ignorar el molino</td>
+                                <td class="p-3">Molido inconsistente, sabor pobre</td>
+                                <td class="p-3">Priorizar un buen molino de muelas</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Comprar demasiado equipo</td>
+                                <td class="p-3">Confusión, gasto innecesario</td>
+                                <td class="p-3">Comenzar con un método y equipo básico</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">No limpiar el equipo</td>
+                                <td class="p-3">Acumulación de aceites, sabores rancios</td>
+                                <td class="p-3">Limpiar regularmente todos los equipos</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3">Granos de café de baja calidad</td>
+                                <td class="p-3">No importa el equipo, el café será malo</td>
+                                <td class="p-3">Invertir en granos de especialidad frescos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Próximos Talleres de Equipos y Mantenimiento</h2>
+                <p>¿Quieres aprender a sacar el máximo partido a tu equipo? Únete a nuestros talleres:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Mantenimiento de tu Equipo de Café</strong>: Primer lunes de cada mes - 19:00 a 20:30</li>
+                    <li><strong>Guía para Comprar tu Primera Cafetera</strong>: Último viernes de cada mes - 17:00 a 18:30</li>
+                </ul>
+                <p class="mt-4"><a href="./index.html#contacto" class="text-terracota font-semibold hover:underline">Contáctanos</a> para más información e inscripciones.</p>
+            </div>
+
+            <div class="bg-milk p-6 rounded-lg mt-12 flex flex-col md:flex-row items-center">
+                <img src="./images/profile4.avif" alt="Retrato de David Gómez, especialista en equipos de café" class="w-24 object-cover h-24 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h3 class="font-playfair text-xl mb-2">Sobre el Autor</h3>
+                    <p><strong>David Gómez</strong> es el experto en equipos de Beercoffé, con una vasta experiencia en la selección y el mantenimiento de todo lo relacionado con la preparación del café, desde molinos hasta máquinas de espresso. Es un defensor de la inversión inteligente en herramientas que realmente marcan la diferencia en la taza de café casera.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-olive">
+                <h3 class="font-playfair text-2xl mb-6">Comentarios (0)</h3>
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-600">Sé el primero en dejar un comentario.</p>
+                </div>
+
+                <h4 class="font-playfair text-xl mb-4">Deja tu comentario</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment" class="block mb-1">Comentario *</label>
+                        <textarea id="comment" rows="4" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Publicar comentario</button>
+                </form>
+            </div>
+
+            <div class="mt-16">
+                <h3 class="font-playfair text-2xl mb-6">Artículos Relacionados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="./blog-arte-latte.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/tecnica-late.webp" alt="Barista creando complejo diseño de arte latte en taza de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">TÉCNICA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">El Arte del Latte: De Principiante a Experto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-guia-molido.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/molinos-cafe.jpg" alt="Diferentes tipos de molido de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">PREPARACIÓN</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Guía Definitiva del Molido Perfecto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-catacion-profesional.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/catacion-cafe.webp" alt="Personas realizando catación profesional" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">CULTURA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Introducción a la Catación Profesional</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="./index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

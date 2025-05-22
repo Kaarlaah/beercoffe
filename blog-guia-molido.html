@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Definitiva del Molido Perfecto | Beercoffé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose {
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+        .prose h2, .prose h3, .prose h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .prose img {
+            border-radius: 0.5rem;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose ul, .prose ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <!-- Mismo header que el anterior -->
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Back button -->
+            <a href="./blogs.html" class="inline-flex items-center text-terracota hover:underline mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al blog
+            </a>
+
+            <!-- Post header -->
+            <div class="mb-12">
+                <span class="text-terracota font-semibold">PREPARACIÓN</span>
+                <h1 class="font-playfair text-3xl md:text-4xl mt-2 mb-4">Guía Definitiva del Molido Perfecto</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-6">
+                    <span>5 Junio, 2023</span>
+                    <span class="mx-2">•</span>
+                    <span>6 min lectura</span>
+                    <span class="mx-2">•</span>
+                    <span>Por <a href="#" class="text-terracota hover:underline">Laura Fernández</a></span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Featured image -->
+            <img src="./images/molinos-cafe.jpg" alt="Diferentes tipos de molido de café en cucharas" class="w-full rounded-xl shadow-lg mb-12">
+
+            <!-- Post content -->
+            <div class="prose mx-auto">
+                <p class="lead">El molido del café es quizás el factor más subestimado en la preparación de una buena taza. Un molido incorrecto puede arruinar incluso los mejores granos. En esta guía, te explicamos cómo encontrar el punto perfecto para cada método de preparación.</p>
+
+                <h2>¿Por Qué es Tan Importante el Molido?</h2>
+                <p>El tamaño de las partículas de café afecta directamente:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Extracción</strong>: Superficie de contacto con el agua</li>
+                    <li><strong>Tiempo de preparación</strong>: Flujo del agua a través del café</li>
+                    <li><strong>Sabor</strong>: Balance entre amargor y acidez</li>
+                </ul>
+
+                <img src="./images/tamaños-molidos.png" alt="Comparación visual de diferentes tamaños de molido">
+
+                <h2>Tipos de Molido y Sus Usos</h2>
+
+                <h3>1. Extra Fino (Turco)</h3>
+                <p>Textura similar a la harina. Usado en:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Café turco (Ibrik)</li>
+                    <li>Algunas máquinas espresso antiguas</li>
+                </ul>
+                <p><strong>Precaución</strong>: Fácil de sobre extraer, resultando en amargor excesivo.</p>
+
+                <h3>2. Fino (Espresso)</h3>
+                <p>Textura como azúcar en polvo. Ideal para:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Máquinas espresso modernas</li>
+                    <li>Moka pot (cafetera italiana)</li>
+                </ul>
+
+                <h3>3. Medio-Fino</h3>
+                <p>Similar a arena fina. Perfecto para:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Aeropress (con tiempos cortos)</li>
+                    <li>V60 (con técnica adecuada)</li>
+                </ul>
+
+                <img src="./images/molino-fino-grueso.webp" alt="Primer plano de molido fino y medio">
+
+                <h3>4. Medio</h3>
+                <p>Como arena de playa. Recomendado para:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Cafeteras de goteo automáticas</li>
+                    <li>Chemex (con filtros gruesos)</li>
+                    <li>Sifón</li>
+                </ul>
+
+                <h3>5. Grueso</h3>
+                <p>Como sal marina. Usado en:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Prensa francesa</li>
+                    <li>Cold brew</li>
+                    <li>Percoladores</li>
+                </ul>
+
+                <h2>Consejos para un Molido Perfecto</h2>
+
+                <h3>1. Invierte en un Buen Molino</h3>
+                <p>Los molinos de cuchilla (aspas) generan partículas irregulares, mientras que los de muelas (burr grinders) ofrecen consistencia. La diferencia en el sabor es notable.</p>
+
+                <div class="bg-milk p-6 rounded-lg my-8">
+                    <p>"Un molino de muelas cónicas de calidad media puede mejorar más tu café que una máquina espresso cara con molino de cuchilla."</p>
+                    <p class="mt-4 text-right font-semibold">- Roberto Jiménez, Especialista en Equipos</p>
+                </div>
+
+                <h3>2. Ajusta Según el Método</h3>
+                <p>Como regla general:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Más fino</strong> = Mayor extracción = Más amargor</li>
+                    <li><strong>Más grueso</strong> = Menor extracción = Más acidez</li>
+                </ul>
+
+                <h3>3. Considera la Frescura del Café</h3>
+                <p>Los cafés muy recién tostados (menos de 7 días) pueden necesitar un molido ligeramente más grueso para equilibrar la extracción.</p>
+
+                <h2>Problemas Comunes y Soluciones</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse my-6">
+                        <thead>
+                            <tr class="bg-terracota text-white">
+                                <th class="p-3 text-left">Problema</th>
+                                <th class="p-3 text-left">Posible Causa</th>
+                                <th class="p-3 text-left">Solución</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Café aguado</td>
+                                <td class="p-3">Molido muy grueso</td>
+                                <td class="p-3">Ajustar a molido más fino</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Amargor excesivo</td>
+                                <td class="p-3">Molido muy fino</td>
+                                <td class="p-3">Ajustar a molido más grueso</td>
+                            </tr>
+                            <tr class="border-b border-olive">
+                                <td class="p-3">Extracción desigual</td>
+                                <td class="p-3">Molino de cuchilla</td>
+                                <td class="p-3">Usar molino de muelas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>Nuestras Recomendaciones de Molinos</h2>
+                <p>Para diferentes presupuestos:</p>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Principiante</strong>: Baratza Encore - Excelente relación calidad-precio</li>
+                    <li><strong>Intermedio</strong>: Wilfa Uniform - Precisión escandinava</li>
+                    <li><strong>Avanzado</strong>: Niche Zero - El favorito de los baristas</li>
+                </ul>
+                <p class="mt-4">Visita nuestra tienda para probar estos molinos y recibir asesoría personalizada.</p>
+            </div>
+
+            <!-- Author bio -->
+            <div class="bg-milk p-6 rounded-lg mt-12 flex flex-col md:flex-row items-center">
+                <img src="./images/profile5.jpg" alt="Retrato de Laura Fernández, especialista en café" class="w-24 h-24 object-cover rounded-full mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h3 class="font-playfair text-xl mb-2">Sobre el Autor</h3>
+                    <p><strong>Laura Fernández</strong> es nuestra experta en métodos de preparación y equipos. Con certificaciones de la SCA en Brewing y Barista Skills, ha ayudado a cientos de clientes a mejorar su café en casa mediante técnicas adecuadas.</p>
+                </div>
+            </div>
+
+            <!-- Comments section -->
+            <div class="mt-12 pt-8 border-t border-olive">
+                <h3 class="font-playfair text-2xl mb-6">Comentarios (5)</h3>
+                <div class="space-y-6 mb-8">
+                    <!-- Comment 1 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Juan P.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 7 Junio, 2023</span>
+                        </div>
+                        <p>¡Qué diferencia hace el molino! Cambié mi molino de cuchilla por uno de muelas y es como si estuviera tomando otro café.</p>
+                    </div>
+                    
+                    <!-- Comment 2 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Sofía M.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 6 Junio, 2023</span>
+                        </div>
+                        <p>¿Alguna recomendación para molinos manuales? Quiero algo para llevar de viaje.</p>
+                    </div>
+                </div>
+
+                <!-- Comment form -->
+                <h4 class="font-playfair text-xl mb-4">Deja tu comentario</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment" class="block mb-1">Comentario *</label>
+                        <textarea id="comment" rows="4" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Publicar comentario</button>
+                </form>
+            </div>
+
+            <!-- Related posts -->
+            <div class="mt-16">
+                <h3 class="font-playfair text-2xl mb-6">Artículos Relacionados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="./blog-arte-latte.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/tecnica-late.webp" alt="Diferentes tipos de molido de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">PREPARACIÓN</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Guía Definitiva del Molido Perfecto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-equipo-casa.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/equipo-cafeteria.webp" alt="Equipo básico de café para casa" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">EQUIPOS</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Equipo Esencial para el Café en Casa</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-catacion-profesional.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/catacion-cafe.webp" alt="Personas realizando catación profesional" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">CULTURA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Introducción a la Catación Profesional</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="./index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

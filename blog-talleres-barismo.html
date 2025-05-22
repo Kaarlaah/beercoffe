@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Talleres de Barismo 2023 | Beercoffé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose {
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+        .prose h2, .prose h3, .prose h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .prose img {
+            border-radius: 0.5rem;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose ul, .prose ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Back button -->
+            <a href="./blogs.html" class="inline-flex items-center text-terracota hover:underline mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al blog
+            </a>
+
+            <!-- Post header -->
+            <div class="mb-12">
+                <span class="text-terracota font-semibold">EVENTOS</span>
+                <h1 class="font-playfair text-3xl md:text-4xl mt-2 mb-4">Nuestros Talleres de Barismo 2023</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-6">
+                    <span>5 Mayo, 2023</span>
+                    <span class="mx-2">•</span>
+                    <span>3 min lectura</span>
+                    <span class="mx-2">•</span>
+                    <span>Por <a href="#" class="text-terracota hover:underline">Equipo Beercoffé</a></span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Featured image -->
+            <img src="./images/curso-barista.jpg" alt="Grupo de personas participando en un taller de barismo en Beercoffé" class="w-full rounded-xl shadow-lg mb-12">
+
+            <!-- Post content -->
+            <div class="prose mx-auto">
+                <p class="lead">Este 2023 ampliamos nuestra oferta de talleres para que puedas descubrir todos los secretos del café de especialidad. Desde introducción al barismo hasta técnicas avanzadas de latte art, tenemos opciones para todos los niveles.</p>
+
+                <h2>Nuestros Talleres Principales</h2>
+
+                <div class="space-y-8 my-8">
+                    <!-- Taller 1 -->
+                    <div class="bg-milk p-6 rounded-lg">
+                        <h3 class="font-playfair text-2xl text-terracota mb-2">Introducción al Barismo</h3>
+                        <div class="flex flex-wrap gap-4 mb-4 text-sm">
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="far fa-calendar mr-1"></i> Todos los sábados</span>
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> 10:00 - 13:00</span>
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="fas fa-dollar-sign mr-1"></i> 45</span>
+                        </div>
+                        <p>Perfecto para quienes quieren dar sus primeros pasos en el mundo del café especial. Aprenderás:</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Fundamentos del café de especialidad</li>
+                            <li>Técnicas básicas de extracción</li>
+                            <li>Preparación de espresso perfecto</li>
+                            <li>Introducción al latte art</li>
+                        </ul>
+                        <a href="./index.html#contacto" class="inline-block mt-4 bg-terracota hover:bg-espresso text-white font-bold py-2 px-4 rounded-lg transition duration-300">Inscribirse</a>
+                    </div>
+
+                    <!-- Taller 2 -->
+                    <div class="bg-milk p-6 rounded-lg">
+                        <h3 class="font-playfair text-2xl text-terracota mb-2">Arte Latte Avanzado</h3>
+                        <div class="flex flex-wrap gap-4 mb-4 text-sm">
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="far fa-calendar mr-1"></i> Primer domingo de mes</span>
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> 16:00 - 19:00</span>
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="fas fa-dollar-sign mr-1"></i> 60</span>
+                        </div>
+                        <p>Para quienes ya dominan los básicos y quieren llevar sus habilidades al siguiente nivel:</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Técnicas de vertido avanzado</li>
+                            <li>Diseños multicapa</li>
+                            <li>Uso de herramientas especiales</li>
+                            <li>Creación de tus propios diseños</li>
+                        </ul>
+                        <a href="./index.html#contacto" class="inline-block mt-4 bg-terracota hover:bg-espresso text-white font-bold py-2 px-4 rounded-lg transition duration-300">Inscribirse</a>
+                    </div>
+
+                    <!-- Taller 3 -->
+                    <div class="bg-milk p-6 rounded-lg">
+                        <h3 class="font-playfair text-2xl text-terracota mb-2">Métodos Alternativos</h3>
+                        <div class="flex flex-wrap gap-4 mb-4 text-sm">
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="far fa-calendar mr-1"></i> 15 de cada mes</span>
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> 18:00 - 21:00</span>
+                            <span class="bg-white px-3 py-1 rounded-full"><i class="fas fa-dollar-sign mr-1"></i> 55</span>
+                        </div>
+                        <p>Descubre el mundo más allá del espresso:</p>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Prensa francesa perfecta</li>
+                            <li>Vertidos (V60, Chemex, Kalita)</li>
+                            <li>Aeropress: técnicas profesionales</li>
+                            <li>Cold brew y nitro coffee</li>
+                        </ul>
+                        <a href="./index.html#contacto" class="inline-block mt-4 bg-terracota hover:bg-espresso text-white font-bold py-2 px-4 rounded-lg transition duration-300">Inscribirse</a>
+                    </div>
+                </div>
+
+                <h2>Talleres Especiales</h2>
+                <p>Además de nuestros talleres regulares, ofrecemos eventos especiales durante el año:</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Catación de Café</h4>
+                        <p>Aprende a evaluar cafés como un profesional. Próxima edición: <strong>20 de Julio</strong></p>
+                    </div>
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Tostado en Casa</h4>
+                        <p>Introducción al tostado artesanal. <strong>Agosto (fecha por confirmar)</strong></p>
+                    </div>
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Coffee & Chocolate Pairing</h4>
+                        <p>Armonización de cafés con chocolates. <strong>15 de Septiembre</strong></p>
+                    </div>
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Barismo Competitivo</h4>
+                        <p>Técnicas usadas en competencias profesionales. <strong>Octubre (fecha por confirmar)</strong></p>
+                    </div>
+                </div>
+
+                <h2>¿Qué Incluyen Nuestros Talleres?</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Materiales y equipos para las prácticas</li>
+                    <li>Cafés de especialidad para degustación</li>
+                    <li>Apuntes digitales con lo aprendido</li>
+                    <li>Certificado de participación</li>
+                    <li>10% de descuento en compras ese día</li>
+                </ul>
+
+                <h2>Testimonios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="./images/comment1.webp" alt="Cliente satisfecho" class="w-[60px] h-[60px] object-cover rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">María G.</h4>
+                                <p class="text-sm text-gray-500">Taller de Introducción</p>
+                            </div>
+                        </div>
+                        <p>"Nunca imaginé que había tanto detrás de una buena taza de café. Ahora disfruto mucho más mi café matutino."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <img src="./images/comment2.jpg" alt="Cliente satisfecho" class="w-[60px] h-[60px] object-cover rounded-full mr-4">
+                            <div>
+                                <h4 class="font-semibold">Javier L.</h4>
+                                <p class="text-sm text-gray-500">Taller de Latte Art</p>
+                            </div>
+                        </div>
+                        <p>"Los instructores son increíbles. En solo 3 horas pasé de hacer manchas a crear corazones decentes."</p>
+                    </div>
+                </div>
+
+                <h2>Preguntas Frecuentes</h2>
+                <div class="space-y-4 my-6">
+                    <div class="border-b border-olive pb-4">
+                        <h4 class="font-semibold">¿Necesito experiencia previa?</h4>
+                        <p class="mt-1">Solo para los talleres avanzados. La mayoría comienza desde cero.</p>
+                    </div>
+                    <div class="border-b border-olive pb-4">
+                        <h4 class="font-semibold">¿Puedo regalar un taller?</h4>
+                        <p class="mt-1">¡Claro! Tenemos bonos regalo que puedes personalizar.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">¿Hay descuentos para grupos?</h4>
+                        <p class="mt-1">Sí, ofrecemos 10% de descuento para grupos de 4 o más personas.</p>
+                    </div>
+                </div>
+
+                <div class="bg-terracota text-white p-6 rounded-lg my-8 text-center">
+                    <h3 class="font-playfair text-2xl mb-4">¡Regístrate Ahora!</h3>
+                    <p class="mb-4">Plazas limitadas para garantizar la mejor experiencia</p>
+                    <a href="./index.html#contacto" class="inline-block bg-white hover:bg-milk text-terracota font-bold py-3 px-8 rounded-lg transition duration-300">Reservar mi plaza</a>
+                </div>
+            </div>
+
+            <!-- Author bio -->
+            <div class="bg-milk p-6 rounded-lg mt-12 flex flex-col md:flex-row items-center">
+                <img src="./images/beercoffe-logo.png" alt="Beercoffé Logo" class="w-24 h-24 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h3 class="font-playfair text-xl mb-2">Sobre Nosotros</h3>
+                    <p><strong>Equipo Beercoffé</strong> está formado por apasionados del café con años de experiencia en la industria. Nuestros talleres son diseñados e impartidos por baristas certificados que comparten no solo técnicas, sino también su amor por el café de especialidad.</p>
+                </div>
+            </div>
+
+            <!-- Comments section -->
+            <div class="mt-12 pt-8 border-t border-olive">
+                <h3 class="font-playfair text-2xl mb-6">Comentarios (4)</h3>
+                <div class="space-y-6 mb-8">
+                    <!-- Comment 1 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Ana R.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 10 Mayo, 2023</span>
+                        </div>
+                        <p>Hice el taller de métodos alternativos el mes pasado y fue increíble. ¡Ahora mi Aeropress hace magia!</p>
+                    </div>
+                    
+                    <!-- Comment 2 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Pedro L.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 8 Mayo, 2023</span>
+                        </div>
+                        <p>¿Habrá taller de latte art en junio? No puedo asistir en las fechas publicadas.</p>
+                    </div>
+                </div>
+
+                <!-- Comment form -->
+                <h4 class="font-playfair text-xl mb-4">Deja tu comentario</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment" class="block mb-1">Comentario *</label>
+                        <textarea id="comment" rows="4" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Publicar comentario</button>
+                </form>
+            </div>
+
+            <!-- Related posts -->
+            <div class="mt-16">
+                <h3 class="font-playfair text-2xl mb-6">Artículos Relacionados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="./blog-arte-latte.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="../images/tecnica-late.webp" alt="Barista creando arte latte" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">TÉCNICA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">El Arte del Latte: De Principiante a Experto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-catacion-profesional.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="../images/catacion-cafe.webp" alt="Personas catando café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">CULTURA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Introducción a la Catación Profesional</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-origenes-cafe.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="../images/cafe-plantacion.png" alt="Plantación de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">HISTORIA</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Los Orígenes del Café en Etiopía</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="./index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

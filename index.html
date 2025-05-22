@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beercoffé - Café con Alma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMDQsIDE5MywgMTc0LCAwLjEpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <span class="font-playfair text-2xl font-bold">Beercoffé</span>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="/" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                    <li><a href="#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Descubre el auténtico <span class="text-terracota">sabor</span> del café</h1>
+                <p class="text-lg mb-8">En Beercoffé fusionamos tradición e innovación para ofrecerte experiencias únicas en cada taza.</p>
+                <a href="#contacto" class="bg-terracota hover:bg-espresso text-milk font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Visítanos</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./images/coffe1.avif" alt="Taza de café artesanal Beercoffé con arte latte" class="rounded-lg shadow-xl max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="py-16 bg-milk">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-3xl text-center mb-12">Nuestras Especialidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="./images/espresso1.webp" alt="Espresso perfecto servido en taza pequeña" class="w-full h-[380px] object-cover rounded mb-4">
+                    <h3 class="font-playfair text-xl mb-2">Espresso Beercoffé</h3>
+                    <p class="text-olive">Nuestra mezcla exclusiva con notas de chocolate negro y nuez.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="./images/coffe2.jpg" alt="Cold brew servido en vaso alto con hielo" class="w-full h-[380px] object-cover rounded mb-4">
+                    <h3 class="font-playfair text-xl mb-2">Cold Brew Artesanal</h3>
+                    <p class="text-olive">Preparado durante 18 horas para una experiencia suave y refrescante.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <img src="./images/coffe3.jpg" alt="Latte con diseño de corazón en la espuma" class="w-full h-[380px] object-cover rounded mb-4">
+                    <h3 class="font-playfair text-xl mb-2">Latte Artístico</h3>
+                    <p class="text-olive">Disfruta de nuestras creaciones de arte latte hechas con esmero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosities Section -->
+    <section id="curiosidades" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-3xl text-center mb-12">Curiosidades del Café</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                <div>
+                    <img src="./images/cafe-plantacion.png" alt="Granos de café en planta en una plantación" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <h3 class="font-playfair text-2xl mb-4">El Origen del Café</h3>
+                    <p class="mb-4">La leyenda cuenta que un pastor etíope llamado Kaldi descubrió el café cuando notó que sus cabras se volvían más energéticas después de comer las bayas rojas de un arbusto.</p>
+                    <p>Desde Etiopía, el café se extendió a Yemen y luego al resto del mundo árabe, donde se popularizaron las primeras cafeterías llamadas "qahveh khaneh".</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="md:order-2">
+                    <img src="./images/arica-robusta.jpg" alt="Comparación entre granos de café Arábica y Robusta" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:order-1">
+                    <h3 class="font-playfair text-2xl mb-4">Arábica vs. Robusta</h3>
+                    <p class="mb-4">Existen principalmente dos especies de café cultivadas comercialmente:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Arábica:</strong> Representa el 60-70% de la producción mundial. Más suave, aromático y con menos cafeína.</li>
+                        <li><strong>Robusta:</strong> Más resistente, con mayor contenido de cafeína y sabor más intenso y amargo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog" class="py-16 bg-milk">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-3xl text-center mb-12">Nuestro Blog</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/cold-brew-casero.jpg" alt="Equipo para preparar cold brew casero" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm">PREPARACIÓN</span>
+                        <h3 class="font-playfair text-xl my-2">Cómo Hacer Cold Brew en Casa</h3>
+                        <p class="text-sm text-gray-500 mb-4">15 Mayo, 2023 • 5 min lectura</p>
+                        <p class="mb-4">Aprende el método sencillo para preparar cold brew en casa sin necesidad de equipos especializados.</p>
+                        <a href="./blog-cold-brew.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/catacion-cafe.webp" alt="Persona realizando catación de café profesional" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm">CULTURA</span>
+                        <h3 class="font-playfair text-xl my-2">Introducción a la Catación de Café</h3>
+                        <p class="text-sm text-gray-500 mb-4">22 Abril, 2023 • 8 min lectura</p>
+                        <p class="mb-4">Descubre cómo los profesionales evalúan la calidad del café y cómo puedes desarrollar tu paladar.</p>
+                        <a href="./blog-catacion-profesional.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/equipo-cafeteria.webp" alt="Equipo esencial para preparación de café" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm">EQUIPOS</span>
+                        <h3 class="font-playfair text-xl my-2">Equipo Básico para el Café en Casa</h3>
+                        <p class="text-sm text-gray-500 mb-4">10 Abril, 2023 • 6 min lectura</p>
+                        <p class="mb-4">No necesitas una cafetería profesional para disfrutar de buen café. Te mostramos el equipo esencial.</p>
+                        <a href="./blog-equipo-casa.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-10">
+                <a href="./blogs.html" class="bg-espresso hover:bg-terracota text-milk font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Ver todos los artículos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-espresso text-milk">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-3xl text-center mb-12">Contáctanos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-playfair text-2xl mb-4">Visítanos</h3>
+                    <p class="mb-6">Estamos ubicados en el corazón de la ciudad, listos para servirte el mejor café de la región.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-terracota mr-3 mt-1"><i class="fa-solid fa-location-dot text-white"></i></span>
+                            <p>Calle del Aroma, 123<br>Ciudad Cafetalera</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-terracota mr-3"><i class="fa-regular fa-clock text-white"></i></span>
+                            <p>Lunes a Viernes: 7:00 - 20:00<br>Sábado y Domingo: 8:00 - 22:00</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-terracota mr-3"><i class="fa-solid fa-phone text-white"></i></span>
+                            <p>+34 123 456 789</p>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-terracota mr-3"><i class="fa-regular fa-envelope-open text-white"></i></span>
+                            <p>hola@beercoffe.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-playfair text-xl mb-4">Síguenos</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-2xl hover:text-terracota transition"><i class="fa-brands fa-instagram text-white"></i></a>
+                            <a href="#" class="text-2xl hover:text-terracota transition"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                            <a href="#" class="text-2xl hover:text-terracota transition"><i class="fa-brands fa-x-twitter text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-playfair text-2xl mb-4">Escríbenos</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre completo</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-milk text-espresso border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-milk text-espresso border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-1">Asunto</label>
+                            <select id="subject" class="w-full px-4 py-2 rounded bg-milk text-espresso border border-olive focus:border-terracota focus:outline-none">
+                                <option value="">Selecciona una opción</option>
+                                <option value="reserva">Reserva</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="evento">Evento Privado</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Mensaje</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-milk text-espresso border border-olive focus:border-terracota focus:outline-none"></textarea>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="newsletter" class="mr-2">
+                            <label for="newsletter">Suscribirme al newsletter</label>
+                        </div>
+                        <button type="submit" class="bg-terracota hover:bg-milk text-white hover:text-espresso font-bold py-3 px-6 rounded-lg transition duration-300 w-full">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="#blog" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Newsletter</h4>
+                    <p class="mb-4">Suscríbete para recibir nuestras novedades y promociones.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Tu email" class="px-3 py-2 rounded-l bg-milk text-espresso focus:outline-none w-full">
+                        <button type="submit" class="bg-terracota hover:bg-milk text-white hover:text-espresso px-4 py-2 rounded-r transition duration-300">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll suave al hacer clic en anclas internas
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    
+        // Scroll suave si se llega con un hash desde otra página
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash;
+            if (hash) {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 100); // Pequeño delay para asegurar que todo cargue bien
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>

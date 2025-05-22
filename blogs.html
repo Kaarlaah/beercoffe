@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Beercoffé - Café con Alma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMDQsIDE5MywgMTc0LCAwLjEpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
+        }
+        .category-filter .active {
+            background-color: #CB997E;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="hero-pattern py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Blog Beercoffé</h1>
+            <p class="text-xl max-w-2xl mx-auto">Descubre artículos, guías y consejos sobre el fascinante mundo del café</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <!-- Categories Filter -->
+            <div class="category-filter flex flex-wrap gap-2 mb-12 justify-center">
+                <button class="px-4 py-2 rounded-full border border-terracota hover:bg-terracota hover:text-white transition active">Todos</button>
+                <button class="px-4 py-2 rounded-full border border-terracota hover:bg-terracota hover:text-white transition">Preparación</button>
+                <button class="px-4 py-2 rounded-full border border-terracota hover:bg-terracota hover:text-white transition">Equipos</button>
+                <button class="px-4 py-2 rounded-full border border-terracota hover:bg-terracota hover:text-white transition">Cultura</button>
+                <button class="px-4 py-2 rounded-full border border-terracota hover:bg-terracota hover:text-white transition">Eventos</button>
+            </div>
+
+            <!-- Featured Post -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-16">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="./images/tecnica-late.webp" alt="Barista creando complejo diseño de arte latte en taza de café" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <span class="text-terracota font-semibold">TÉCNICA</span>
+                        <h2 class="font-playfair text-3xl mt-2 mb-4">El Arte del Latte: De Principiante a Experto</h2>
+                        <p class="text-gray-600 mb-4">Aprende las técnicas que usan los profesionales para crear impresionantes diseños en tus bebidas de café.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-6">
+                            <span>12 Junio, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>8 min lectura</span>
+                        </div>
+                        <a href="./blog-arte-latte.html" class="inline-block bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Leer artículo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/molinos-cafe.jpg" alt="Diferentes tipos de molido de café en cucharas" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm font-semibold">PREPARACIÓN</span>
+                        <h3 class="font-playfair text-xl my-2">Guía Definitiva del Molido Perfecto</h3>
+                        <p class="text-sm text-gray-500 mb-4">5 Junio, 2023 • 6 min lectura</p>
+                        <p class="mb-4">Descubre cómo el tamaño del molido afecta la extracción y cómo ajustarlo para cada método de preparación.</p>
+                        <a href="./blog-guia-molido.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/catacion-cafe.webp" alt="Personas realizando catación profesional de café" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm font-semibold">CULTURA</span>
+                        <h3 class="font-playfair text-xl my-2">Introducción a la Catación Profesional</h3>
+                        <p class="text-sm text-gray-500 mb-4">28 Mayo, 2023 • 10 min lectura</p>
+                        <p class="mb-4">Aprende los secretos de cómo los expertos evalúan y describen las características del café.</p>
+                        <a href="./blog-catacion-profesional.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/equipo-cafeteria.webp" alt="Equipo básico de café para casa en mesa de madera" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm font-semibold">EQUIPOS</span>
+                        <h3 class="font-playfair text-xl my-2">Equipo Esencial para el Café en Casa</h3>
+                        <p class="text-sm text-gray-500 mb-4">20 Mayo, 2023 • 5 min lectura</p>
+                        <p class="mb-4">Los 5 elementos imprescindibles para preparar café de calidad profesional en tu hogar.</p>
+                        <a href="./blog-equipo-casa.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/cafe-plantacion.png" alt="Plantación de café en las montañas de Etiopía" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm font-semibold">HISTORIA</span>
+                        <h3 class="font-playfair text-xl my-2">Los Orígenes del Café en Etiopía</h3>
+                        <p class="text-sm text-gray-500 mb-4">15 Mayo, 2023 • 7 min lectura</p>
+                        <p class="mb-4">Un viaje a las raíces del café y cómo se descubrió esta maravillosa bebida.</p>
+                        <a href="./blog-origenes-cafe.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/cold-brew-naranja.webp" alt="Cold brew servido con hielo y rodaja de naranja" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm font-semibold">RECETA</span>
+                        <h3 class="font-playfair text-xl my-2">Cold Brew Perfecto para el Verano</h3>
+                        <p class="text-sm text-gray-500 mb-4">10 Mayo, 2023 • 4 min lectura</p>
+                        <p class="mb-4">La receta definitiva para preparar un refrescante cold brew en casa.</p>
+                        <a href="./blog-cold-brew.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="./images/curso-barista.jpg" alt="Grupo de personas en taller de barismo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-terracota text-sm font-semibold">EVENTOS</span>
+                        <h3 class="font-playfair text-xl my-2">Nuestros Talleres de Barismo 2023</h3>
+                        <p class="text-sm text-gray-500 mb-4">5 Mayo, 2023 • 3 min lectura</p>
+                        <p class="mb-4">Conoce nuestra programación de talleres para aprender las técnicas del barismo profesional.</p>
+                        <a href="./blog-talleres-barismo.html" class="text-terracota font-semibold hover:underline">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center mt-12">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-4 py-2 border border-terracota rounded-lg text-terracota hover:bg-terracota hover:text-white transition">&laquo; Anterior</a>
+                    <a href="#" class="px-4 py-2 border border-terracota rounded-lg bg-terracota text-white">1</a>
+                    <a href="#" class="px-4 py-2 border border-terracota rounded-lg text-terracota hover:bg-terracota hover:text-white transition">2</a>
+                    <a href="#" class="px-4 py-2 border border-terracota rounded-lg text-terracota hover:bg-terracota hover:text-white transition">3</a>
+                    <a href="#" class="px-4 py-2 border border-terracota rounded-lg text-terracota hover:bg-terracota hover:text-white transition">Siguiente &raquo;</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-milk">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="font-playfair text-3xl mb-4">Suscríbete a nuestro Newsletter</h2>
+            <p class="mb-8">Recibe artículos exclusivos, promociones y noticias sobre nuestros eventos directamente en tu correo.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Tu correo electrónico" class="flex-grow px-4 py-3 rounded-lg border border-olive focus:outline-none focus:border-terracota">
+                <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-3 px-6 rounded-lg transition duration-300">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="curiosidades.html" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="contacto.html" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fa-brands fa-instagram text-white"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fa-brands fa-facebook-f text-white"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fa-brands fa-x-twitter text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category filter functionality
+        const filterButtons = document.querySelectorAll('.category-filter button');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                // Here you would add filtering logic
+            });
+        });
+    </script>
+</body>
+</html>

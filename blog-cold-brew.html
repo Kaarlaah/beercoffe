@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Brew Perfecto para el Verano | Beercoffé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        espresso: '#4E342E',
+                        milk: '#FFF8E1',
+                        olive: '#A5A58D',
+                        terracota: '#CB997E',
+                        warmwhite: '#FAF4E6'
+                    },
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose {
+            max-width: 65ch;
+            line-height: 1.6;
+        }
+        .prose h2, .prose h3, .prose h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .prose img {
+            border-radius: 0.5rem;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose ul, .prose ol {
+            padding-left: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-warmwhite text-espresso">
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 z-50 bg-espresso text-milk shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-[8px]">
+                <a href="index.html" class="font-playfair text-2xl font-bold">Beercoffé</a>
+                <span class="ml-2 text-terracota text-sm hidden md:block mb-[-6px]">Donde el café encuentra su alma</span>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-terracota transition">Inicio</a></li>
+                    <li><a href="index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                    <li><a href="./blogs.html" class="text-terracota font-semibold transition">Blog</a></li>
+                    <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">☰</button>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Back button -->
+            <a href="./blogs.html" class="inline-flex items-center text-terracota hover:underline mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Volver al blog
+            </a>
+
+            <!-- Post header -->
+            <div class="mb-12">
+                <span class="text-terracota font-semibold">RECETA</span>
+                <h1 class="font-playfair text-3xl md:text-4xl mt-2 mb-4">Cold Brew Perfecto para el Verano</h1>
+                <div class="flex items-center text-sm text-gray-500 mb-6">
+                    <span>10 Mayo, 2023</span>
+                    <span class="mx-2">•</span>
+                    <span>4 min lectura</span>
+                    <span class="mx-2">•</span>
+                    <span>Por <a href="#" class="text-terracota hover:underline">Diego Ramírez</a></span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-terracota transition"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+
+            <!-- Featured image -->
+            <img src="../images/cold-brew-naranja.webp" alt="Cold brew servido en vaso alto con hielo y rodaja de naranja" class="w-full rounded-xl shadow-lg mb-12">
+
+            <!-- Post content -->
+            <div class="prose mx-auto">
+                <p class="lead">El cold brew se ha convertido en la bebida estrella del verano. Con su sabor suave, bajo contenido de acidez y refrescante carácter, es la alternativa perfecta para los días calurosos. Aquí te enseñamos cómo prepararlo en casa como un profesional.</p>
+
+                <h2>¿Qué es el Cold Brew?</h2>
+                <p>A diferencia del café helado tradicional (que es café caliente enfriado), el cold brew se prepara en frío desde el principio, resultando en una bebida menos ácida y más dulce naturalmente.</p>
+
+                <h2>Ingredientes y Equipo</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>100g</strong> de café molido grueso (nuestra mezcla Cold Blend es ideal)</li>
+                    <li><strong>1 litro</strong> de agua filtrada fría</li>
+                    <li>Recipiente grande de vidrio o acero inoxidable</li>
+                    <li>Filtro de café, colador fino o bolsa para cold brew</li>
+                    <li>Botella o jarra para almacenar</li>
+                </ul>
+
+                <img src="./images/equipo-cold-brew.jpg" alt="Equipo básico para preparar cold brew en casa">
+
+                <h2>Paso a Paso</h2>
+
+                <h3>1. Preparación</h3>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li>Muele los granos en un molido grueso (similar a sal marina)</li>
+                    <li>Vierte el café molido en tu recipiente</li>
+                    <li>Añade el agua poco a poco, asegurando que todos los granos se empapen</li>
+                    <li>Revuelve suavemente para integrar</li>
+                </ol>
+
+                <h3>2. Infusión</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Tapa el recipiente</li>
+                    <li>Deja reposar a temperatura ambiente durante <strong>12-24 horas</strong></li>
+                    <li>Para un sabor más intenso: 18-24 horas</li>
+                    <li>Para un sabor más suave: 12-16 horas</li>
+                </ul>
+
+                <div class="bg-milk p-6 rounded-lg my-8">
+                    <p>"La paciencia es clave. No intentes acelerar el proceso, la magia del cold brew está en la extracción lenta y en frío."</p>
+                    <p class="mt-4 text-right font-semibold">- Diego Ramírez, Especialista en Métodos Fríos</p>
+                </div>
+
+                <h3>3. Filtrado</h3>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li>Pasa el líquido a través de un filtro de café o colador fino</li>
+                    <li>Para mejores resultados, filtra dos veces</li>
+                    <li>Desecha los posos (o úsalos para compost)</li>
+                </ol>
+
+                <img src="./images/filtrado-cold-brew.jpg" alt="Proceso de filtrado del cold brew">
+
+                <h3>4. Servir</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Llena un vaso con hielo</li>
+                    <li>Vierte el cold brew concentrado (normalmente usamos proporción 1:1 con agua o leche)</li>
+                    <li>Añade tus ingredientes favoritos (ver opciones abajo)</li>
+                    <li>Remueve y disfruta</li>
+                </ul>
+
+                <h2>Variaciones Creativas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Cold Brew con Leche de Coco</h4>
+                        <p>Mezcla 1 parte de cold brew con 1 parte de leche de coco. Añade hielo y una pizca de canela.</p>
+                    </div>
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Cold Brew Tónico</h4>
+                        <p>1/3 cold brew, 2/3 agua tónica, hielo y una rodaja de pomelo.</p>
+                    </div>
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Cold Brew con Especias</h4>
+                        <p>Añade una rama de canela y 2 clavos de olor durante la infusión.</p>
+                    </div>
+                    <div class="bg-milk p-4 rounded-lg">
+                        <h4 class="font-playfair text-lg mb-2">Cold Brew Affogato</h4>
+                        <p>Vierte cold brew sobre una bola de helado de vainilla.</p>
+                    </div>
+                </div>
+
+                <h2>Consejos de Almacenamiento</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Guarda el concentrado en refrigeración hasta por <strong>2 semanas</strong></li>
+                    <li>Usa recipientes herméticos para mantener la frescura</li>
+                    <li>No congeles el cold brew (afecta el sabor)</li>
+                    <li>Etiqueta con la fecha de preparación</li>
+                </ul>
+
+                <h2>Preguntas Frecuentes</h2>
+                <div class="space-y-4 my-6">
+                    <div class="border-b border-olive pb-4">
+                        <h4 class="font-semibold">¿Puedo usar cualquier café?</h4>
+                        <p class="mt-1">Recomendamos cafés con notas a chocolate o frutos secos para cold brew. Los cafés muy ácidos o frutales pueden perder sus características.</p>
+                    </div>
+                    <div class="border-b border-olive pb-4">
+                        <h4 class="font-semibold">¿Debo remover durante la infusión?</h4>
+                        <p class="mt-1">No es necesario, pero puedes remover suavemente una vez pasadas las primeras 12 horas si deseas una extracción más intensa.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">¿Por qué mi cold brew sabe amargo?</h4>
+                        <p class="mt-1">Probablemente el molido era muy fino o la infusión duró demasiado. Prueba con un molido más grueso y menos tiempo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Author bio -->
+            <div class="bg-milk p-6 rounded-lg mt-12 flex flex-col md:flex-row items-center">
+                <img src="./images/profile3.jpg" alt="Retrato de Diego Ramírez, especialista en café frío" class="w-24 object-cover h-24 rounded-full mb-4 md:mb-0 md:mr-6">
+                <div>
+                    <h3 class="font-playfair text-xl mb-2">Sobre el Autor</h3>
+                    <p><strong>Diego Ramírez</strong> es nuestro experto en métodos de preparación en frío. Después de trabajar en cafeterías especializadas en Seattle, trajo a Beercoffé las últimas técnicas en cold brew y nitro coffee. Dirige nuestros talleres de café frío los viernes por la tarde.</p>
+                </div>
+            </div>
+
+            <!-- Comments section -->
+            <div class="mt-12 pt-8 border-t border-olive">
+                <h3 class="font-playfair text-2xl mb-6">Comentarios (2)</h3>
+                <div class="space-y-6 mb-8">
+                    <!-- Comment 1 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Elena C.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 12 Mayo, 2023</span>
+                        </div>
+                        <p>¡La versión con leche de coco es increíble! Justo lo que necesitaba para refrescarme en la oficina.</p>
+                    </div>
+                    
+                    <!-- Comment 2 -->
+                    <div class="bg-milk p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <span class="font-semibold">Carlos M.</span>
+                            <span class="text-sm text-gray-500 ml-2">- 11 Mayo, 2023</span>
+                        </div>
+                        <p>¿Recomiendan algún tipo específico de agua para el cold brew? ¿El agua mineral afecta el sabor?</p>
+                    </div>
+                </div>
+
+                <!-- Comment form -->
+                <h4 class="font-playfair text-xl mb-4">Deja tu comentario</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nombre *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Correo electrónico *</label>
+                            <input type="email" id="email" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="comment" class="block mb-1">Comentario *</label>
+                        <textarea id="comment" rows="4" required class="w-full px-4 py-2 rounded bg-white border border-olive focus:border-terracota focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="bg-terracota hover:bg-espresso text-white font-bold py-2 px-6 rounded-lg transition duration-300">Publicar comentario</button>
+                </form>
+            </div>
+
+            <!-- Related posts -->
+            <div class="mt-16">
+                <h3 class="font-playfair text-2xl mb-6">Artículos Relacionados</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="./blog-equipo-casa.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="../images/equipo-cafeteria.webp" alt="Equipo básico de café para casa" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">EQUIPOS</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Equipo Esencial para el Café en Casa</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-guia-molido.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="../images/molinos-cafe.jpg" alt="Diferentes tipos de molido de café" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">PREPARACIÓN</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Guía Definitiva del Molido Perfecto</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./blog-talleres-barismo.html" class="group">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                            <img src="./images/curso-barista.jpg" alt="Personas en taller de barismo" class="w-full h-40 object-cover">
+                            <div class="p-4">
+                                <span class="text-terracota text-sm">EVENTOS</span>
+                                <h4 class="font-playfair text-lg group-hover:text-terracota transition">Nuestros Talleres de Barismo 2023</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-espresso text-milk py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-playfair text-xl mb-4">Beercoffé</h3>
+                    <p>Donde el café encuentra su alma. Desde 2018 sirviendo las mejores mezclas artesanales.</p>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-terracota transition">Inicio</a></li>
+                        <li><a href="./index.html#curiosidades" class="hover:text-terracota transition">Curiosidades</a></li>
+                        <li><a href="./blogs.html" class="hover:text-terracota transition">Blog</a></li>
+                        <li><a href="./index.html#contacto" class="hover:text-terracota transition">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Horario</h4>
+                    <ul class="space-y-2">
+                        <li>Lun-Vie: 7:00 - 20:00</li>
+                        <li>Sáb-Dom: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-playfair text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-2xl hover:text-terracota transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-terracota mt-12 pt-8 text-center text-sm">
+                <p>© 2023 Beercoffé. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
